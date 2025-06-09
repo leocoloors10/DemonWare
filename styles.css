@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f23;
+    color: #ffffff;
+}
+
+.demon-gradient {
+    background: linear-gradient(135deg, #ff6b6b 0%, #8b5cf6 100%);
+}
+
+.demon-shadow {
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.product-hover {
+    transition: all 0.3s ease;
+}
+
+.product-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.4);
+}
+
+.category-hover {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-hover:hover {
+    transform: scale(1.05);
+}
+
+.category-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.8), rgba(139, 92, 246, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-hover:hover::before {
+    opacity: 1;
+}
+
+.btn-demon {
+    background: linear-gradient(135deg, #ff6b6b 0%, #8b5cf6 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-demon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
